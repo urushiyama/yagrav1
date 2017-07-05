@@ -1,0 +1,17 @@
+version: '3'
+services:
+  yagrav1_db:
+    build:
+      context: .
+      dockerfile: Dockerfile-db
+  yagrav1_web:
+    build:
+      context: .
+      dockerfile: Dockerfile-web
+    command: bundle exec rails s -p 3000 -b '0.0.0.0'
+    volumes:
+      - .:/app
+    ports:
+      - "3000:3000"
+    depends_on:
+      - yagrav1_db
