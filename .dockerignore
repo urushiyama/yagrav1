@@ -1,0 +1,9 @@
+.git
+log
+tmp
+node_modules
+.editorconfig
+docker-compose.yml
+Dockerfile-db
+Dockerfile-web
+.dockerignore
