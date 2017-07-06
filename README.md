@@ -2,4 +2,4 @@
 
 ## dockerでRailsサーバーを動かす
 
-[dockerでRailsサーバーを動かす](docs/use-docker.md)
+[dockerでRailsサーバーを動かす](use-docker.md)
