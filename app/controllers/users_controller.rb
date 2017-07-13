@@ -2,15 +2,21 @@ class UsersController < ApplicationController
   def index
   end
 
+  def show
+  end
+
   def new
   end
 
   def create
   end
 
-  def profile
+  def edit
   end
 
-  def edit
+  def update
+  end
+
+  def destroy
   end
 end
