@@ -1,10 +1,19 @@
 class ImageController < ApplicationController
-  def index
+  def new
   end
 
-  def upload
+  def create
   end
 
-  def save
+  def show
+  end
+
+  def edit
+  end
+
+  def update
+  end
+
+  def destroy
   end
 end

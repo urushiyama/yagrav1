@@ -1,4 +1,16 @@
 Rails.application.routes.draw do
+  get 'image/new'
+
+  get 'image/create'
+
+  get 'image/show'
+
+  get 'image/edit'
+
+  get 'image/update'
+
+  get 'image/destroy'
+
   get 'image/index'
 
   get 'image/upload'
