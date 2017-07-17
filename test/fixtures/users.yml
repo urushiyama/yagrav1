@@ -1,0 +1,9 @@
+example:
+  name: Example User
+  email: user@example.com
+  system_email: user@example.com
+
+another:
+  name: Another User
+  email: another@example.com
+  system_email: another@example.org
