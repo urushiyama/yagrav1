@@ -1,9 +1,12 @@
 version: '3'
 services:
   yagrav1_db:
+    restart: always
     build:
       context: .
       dockerfile: Dockerfile-db
+    volumes:
+      - ./misc/postgresql:/var/lib/postgresql
   yagrav1_web:
     build:
       context: .
