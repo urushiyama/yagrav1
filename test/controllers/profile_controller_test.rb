@@ -6,11 +6,6 @@ class ProfileControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test "should get create" do
-    get profile_create_url
-    assert_response :success
-  end
-
   test "should get show" do
     get profile_show_url
     assert_response :success
@@ -20,15 +15,4 @@ class ProfileControllerTest < ActionDispatch::IntegrationTest
     get profile_edit_url
     assert_response :success
   end
-
-  test "should get update" do
-    get profile_update_url
-    assert_response :success
-  end
-
-  test "should get destroy" do
-    get profile_destroy_url
-    assert_response :success
-  end
-
 end
