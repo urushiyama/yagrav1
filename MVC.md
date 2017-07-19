@@ -14,7 +14,9 @@
 | updated_at      | datetime |          | 自動生成 | 更新された日時                      |
 | password_digest | string   |          | TBD    | パスワードのハッシュ値                |
 
-### Profile
+- password周りはmigrationで対応予定
+
+### Profile (TBD)
 
 | カラム           | 型        | 制約      | 備考    | 説明                         |
 |:---------------:|:--------:|:--------:|:------:|:---------------------------:|
@@ -26,15 +28,10 @@
 | lock_digest     | string   |          | TBD    | プロフィール保護に用いる認証トークンのハッシュ値 |
 | locked_at       | datetime |          | TBD    | 保護を有効にした日時             |
 | user_id         | integer  |          | user:references | プロフィールを持つユーザのID |
-| image_id        | integer  |          |        | アバターとなる画像のID           |
+| image_name      | string   |          | TBD    | アップロードされた画像のoriginal_filename |
+| image_data      | binary   |          | TBD    | アップロードされた画像のreadしたバイナリ値   |
 
-### Image
-
-| カラム           | 型        | 制約      | 備考    | 説明                                 |
-|:---------------:|:--------:|:--------:|:------:|:-----------------------------------:|
-| id              | integer  | unique   | 自動生成 |                                     |
-| name            | string   |          |        | アップロードされた画像のoriginal_filename |
-| data            | binary   |          |        | アップロードされた画像のreadしたバイナリ値   |
+- 認証トークン周り、image周りはそれぞれmigrationで対応予定
 
 ## View
 
@@ -48,10 +45,6 @@
     
     プロフィールのCLUDのため。
 
-- Images
-    
-    画像ファイルのアップロードのため。
-
 - Sessions
     
     ログイン・ログアウトのため。
@@ -64,7 +57,7 @@
     
     メールアドレスを有効性を保持しつつ変更するため。
 
-## Routing
+## Routing (TBD)
 
 | HTTP動詞 | Path              | #アクション | View                 | 備考              |
 |:-------:|:-----------------:|:--------:|:---------------------:|:---------------:|
