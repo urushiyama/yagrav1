@@ -1,5 +1,11 @@
 # yagrav1
 
-## dockerでRailsサーバーを動かす
+## For Developers
 
-[dockerでRailsサーバーを動かす](use-docker.md)
+### Tips
+
+- [dockerでRailsサーバーを動かす](use-docker.md)
+
+### 設計
+
+- [MVC設計・ルーティング](MVC.md)
